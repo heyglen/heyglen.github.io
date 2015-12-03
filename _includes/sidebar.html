@@ -17,6 +17,7 @@
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
 
+    
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
@@ -25,7 +26,7 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
+    
       <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/master.zip">Download</a> -->
       <hr>
       <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
