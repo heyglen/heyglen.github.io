@@ -22,7 +22,7 @@ This was tested using the following versions
  * [zlib](http://www.zlib.net/)
  * [openssl](https://www.openssl.org/source/)
  * [setuptools](https://pypi.python.org/pypi/setuptools#code-of-conduct)
- * [pip](https://pypi.python.org/pypi/setuptools#code-of-conduct)
+ * [pip](https://pypi.python.org/pypi/pip#downloads)
 
 Transfer the software to the offline server
 
