@@ -10,7 +10,7 @@ relative_permalinks: true
 title:            'Glen Harmon'
 tagline:          ''
 description:      ''
-url:              https://heyglen.github.io
+url:              http://heyglen.github.io
 baseurl:          http://heyglen.github.io/
 
 author:
