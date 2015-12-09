@@ -3,7 +3,7 @@ layout: post
 title: Install Python: no sudo, no internet
 ---
 
-# Install Python: no sudo, no internet
+# Install Python no sudo no internet
 
 ## Versions
 
