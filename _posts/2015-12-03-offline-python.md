@@ -56,14 +56,14 @@ mkdir $HOME/.config/pip/
 cd
 tar zxf openssl-1.0.0s.tar.gz
 cd openssl-1.0.0s
-./config --prefix=$HOME/.local && make && make install
+./config --prefix=$HOME/.local --openssldir=$HOME/.local/openssl shared && make && make install
 ```
 
 ### zlib
 
 ```bash
 cd
-tar zxf zlib128.tar.gz
+tar zxf zlib-1.2.8.tar.gz
 cd zlib-1.2.8
 ./configure --prefix=$HOME/.local && make && make install
 ```
