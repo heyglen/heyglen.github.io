@@ -110,7 +110,7 @@ vim $HOME/.config/.pydistutils.cfg
 ```cfg
 [easy_install]
 allow_hosts = ''
-find_links = file://$HOME/packages/python
+find_links = ~/packages/python
 ```
 
 ### Pip
@@ -122,8 +122,8 @@ vim $HOME/.config/pip/pip.conf
 ```cfg
 [install]
 no-index = true
-wheel-dir = $HOME/packages/python
-find-links = file://$HOME/packages/python
+wheel-dir = ~/packages/python
+find-links = ~/packages/python
 ```
 
 ## Aquire Packages
