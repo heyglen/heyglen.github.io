@@ -57,6 +57,10 @@ cd
 tar zxf openssl-1.0.0s.tar.gz
 cd openssl-1.0.0s
 ./config --prefix=$HOME/.local --openssldir=$HOME/.local/openssl shared && make && make install
+
+echo "export LD_LIBRARY_PATH=$HOME/.local:\$LD_LIBRARY_PATH" >> $HOME/.bashrc
+export LD_LIBRARY_PATH=$HOME/.local:$LD_LIBRARY_PATH
+
 ```
 
 ### zlib
