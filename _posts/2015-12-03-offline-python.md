@@ -38,7 +38,7 @@ scp * user@offline-server
  * Create the directory structure
 
 ```bash
-echo "export PATH=$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
+echo "export PATH=\$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 export PATH=$HOME/.local/bin:$PATH
 
 mkdir $HOME/.local
@@ -56,7 +56,7 @@ tar zxf openssl-1.0.0s.tar.gz
 cd openssl-1.0.0s
 ./config --prefix=$HOME/.local --openssldir=$HOME/.local/openssl shared && make && make install
 
-echo "export LD_LIBRARY_PATH=$HOME/.local/lib:\$LD_LIBRARY_PATH" >> $HOME/.bashrc
+echo "export LD_LIBRARY_PATH=\$HOME/.local/lib:\$LD_LIBRARY_PATH" >> $HOME/.bashrc
 export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
 
 ```
