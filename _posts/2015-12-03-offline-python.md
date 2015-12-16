@@ -42,10 +42,8 @@ echo "export PATH=$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
 export PATH=$HOME/.local/bin:\$PATH
 
 mkdir $HOME/.local
-mkdir $HOME/packages
-mkdir $HOME/packages/python
-mkdir $HOME/.config/
-mkdir $HOME/.config/pip/
+mkdir -p $HOME/packages/python
+mkdir -p $HOME/.config/pip/
 ```
 
 ## Compile software
