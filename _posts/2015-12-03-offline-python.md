@@ -39,7 +39,7 @@ scp * user@offline-server
 
 ```bash
 echo "export PATH=$HOME/.local/bin:\$PATH" >> $HOME/.bashrc
-export PATH=$HOME/.local/bin:\$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 mkdir $HOME/.local
 mkdir -p $HOME/packages/python
