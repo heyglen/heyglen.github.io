@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Install Python: no sudo, no internet
+title: Installing Python without Internet or Root
 ---
-
 
 # Install Python no sudo no internet
 
