@@ -24,7 +24,7 @@ This was tested using the following versions
 
 Transfer the software to the offline server
 
-```shell
+``` shell
 cd Downloads
 scp * user@offline-server
 ```
