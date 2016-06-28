@@ -3,9 +3,7 @@ layout: post
 title: Installing Python without Internet or Root
 ---
 
-# Install Python no sudo no internet
-
-## Versions
+# Versions
 
 This was tested using the following versions
 
@@ -16,7 +14,7 @@ This was tested using the following versions
  * setuptools 18.6.1
  * pip 7.1.2
 
-## Downlaod Packages
+# Downlaod Packages
 
  * [Python](https://www.python.org/downloads/source/)
  * [zlib](http://www.zlib.net/)
@@ -31,7 +29,7 @@ cd Downloads
 scp * user@offline-server
 ```
 
-## Setup the offline server
+# Setup the offline server
 
  * Update the path
  * Create the directory structure
@@ -45,9 +43,9 @@ mkdir -p $HOME/packages/python
 mkdir -p $HOME/.config/pip/
 ```
 
-## Compile software
+# Compile software
 
-### openssl
+## openssl
 
 ```bash
 cd
@@ -60,7 +58,7 @@ export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
 
 ```
 
-### zlib
+## zlib
 
 ```bash
 cd
@@ -69,7 +67,7 @@ cd zlib-1.2.8
 ./configure --prefix=$HOME/.local && make && make install
 ```
 
-### Python
+## Python
 
 ```bash
 cd
@@ -78,7 +76,7 @@ cd Python-2.7.10
 ./configure --prefix=$HOME/.local && make && make install
 ```
 
-### Python setuptools
+## Python setuptools
 
 
 ```bash
@@ -88,15 +86,15 @@ cd setuptools-18.6.1
 python setup.py install
 ```
 
-### Python pip
+## Python pip
 
 ```bash
 easy_install pip-7.1.2.tar.gz
 ```
 
-## Pip Setup
+# Pip Setup
 
-### Distutils
+## Distutils
 
 This is used so pip can resolve and install dependencies when a server does not have internet access
 
@@ -110,7 +108,7 @@ allow_hosts = ''
 find_links = ~/packages/python
 ```
 
-### Pip
+## Pip
 
 ```bash
 vim $HOME/.config/pip/pip.conf
@@ -123,7 +121,7 @@ wheel-dir = ~/packages/python
 find-links = ~/packages/python
 ```
 
-## Aquire Packages
+# Get the Packages
 
 On a PC with internet access and a working python + pip, download the packages and their dependencies
 
