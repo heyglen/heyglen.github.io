@@ -102,7 +102,7 @@ This is used so pip can resolve and install dependencies when a server does not 
 vim $HOME/.config/.pydistutils.cfg
 ```
 
-```cfg
+```conf
 [easy_install]
 allow_hosts = ''
 find_links = ~/packages/python
@@ -114,7 +114,7 @@ find_links = ~/packages/python
 vim $HOME/.config/pip/pip.conf
 ```
 
-```cfg
+```conf
 [install]
 no-index = true
 wheel-dir = ~/packages/python
