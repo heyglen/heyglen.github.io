@@ -1,0 +1,190 @@
+body {
+  font-family: "Karla";
+  padding: 3em 3em 3em 6em;
+  font-size: 18px;
+  line-height: 1.5em;
+  width: 50%;
+}
+@media only screen
+  and (max-width: 768px) {
+  body {
+    padding: 1em;
+    width: 80%;
+  }
+}
+
+
+#header {
+  background-color: #222;
+  color: #fff;
+  padding: 0.5em;
+  float: left;
+  margin-right: 100%;
+  font-size: 32px;
+  line-height: 1.0em;
+}
+
+#header a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#header:hover {
+  background-color: #0069FF;
+}
+
+h1 {
+  color: #0069FF;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 0.5em;
+}
+
+.posts > .post {
+  width: 150%;
+  float: left;
+  margin-bottom: 10px;
+}
+@media only screen
+  and (max-width: 768px) {
+  .posts > .post {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+
+.posts > a {
+  display: block;
+  width: 60%;
+  float: left;
+}
+@media only screen
+  and (max-width: 768px) {
+  .post > a {
+    display: inline-block;
+  }
+}
+
+a {
+  color: #0069FF;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px #0069FF solid;
+}
+
+.post-date {
+  color: #aaa;
+  font-weight: normal;
+}
+
+.post-link {
+  display: inline-block;
+}
+
+.posts .post-date {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+@media only screen
+  and (max-width: 768px) {
+  .posts .post-date {
+    width: auto;
+    margin-right: 1em;
+    float: left;
+  }
+  .post-link {
+    display: block;
+  }
+}
+
+.post .tag {
+  display: none;
+}
+
+.posts .post .tag {
+  display: block;
+}
+
+.posts .tag {
+  text-align: right;
+  float: right;
+}
+@media only screen
+  and (max-width: 768px) {
+  .posts .post .tag {
+    display: none;
+  }
+}
+
+.post-date a {
+  color: #aaa;
+  background-color: #eee;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.post-date a:hover {
+  color: #e9413b;
+  background-color: #F2D6D5;
+  border-bottom: none;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 1em #ccc solid;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+hr {
+  border: 1px #ccc solid;
+  width: 50%;
+  margin: 2em;
+  margin-left: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+pre {
+  background-color: #efefef;
+    border: 1px #bbb solid;
+    font-size: 14px;
+    padding: 1em;
+    white-space: pre-wrap;
+    font-family: "Menlo";
+}
+
+code {
+      font-size: 14px;
+    color: #aaa;
+    border-bottom: 1px;
+}
+
+pre code {
+  color: #000;
+}
+
+.content {
+  float: left;
+  margin-bottom: 2em;
+}
+
+.footer {
+  margin-bottom: 2em;
+}
+
+li {
+    margin-top: 10px;
+}
