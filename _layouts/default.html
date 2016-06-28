@@ -5,7 +5,14 @@
 
   <body>
 
-    {% include sidebar.html %}
+    <div>
+      <h1>
+        <a href="{{ site.baseurl }}">
+          {{ site.title }}
+        </a>
+      </h1>
+      <p>{{ site.description }}</p>
+    </div>
 
     <div class="content container">
       {{ content }}
