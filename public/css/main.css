@@ -166,16 +166,6 @@ pre {
     font-family: "Menlo";
 }
 
-code {
-      font-size: 14px;
-    color: #aaa;
-    border-bottom: 1px;
-}
-
-pre code {
-  color: #000;
-}
-
 .content {
   float: left;
   margin-bottom: 2em;
