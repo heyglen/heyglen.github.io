@@ -24,9 +24,8 @@ Edit your SSH Config
 [host01]# vim $HOME/.ssh/config
 ```
 
- * Proxy to *host03* through *host02*
-
- * Proxy to *host04* through *host03*
+ * Setup a proxy through *host02* to *host03*
+ * Setup a proxy through *host03* to *host04*
 
 ```conf
 host host03
