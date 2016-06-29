@@ -3,9 +3,7 @@ layout: post
 title: Installing Python without Internet or Root
 ---
 
-# Versions
-
-This was tested using the following versions
+# Test Setup
 
  * Red Hat Enterprise Linux Server release 7.1
  * Python 2.7.10
