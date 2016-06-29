@@ -1,7 +1,7 @@
 body {
   /*font-family: Verdana,Arial,sans-serif;*/
-  font-family: "Karla";
   padding: 3em 3em 3em 6em;
+  font-family: "Karla";
   font-size: 18px;
   line-height: 1.5em;
   width: 50%;
@@ -15,8 +15,10 @@ body {
 }
 
 
-header > h1 {
-  font-size: 42px;
+header  {
+  font-size: 26px;
+  font-weight: normal;
+  text-decoration: none;
 }
 
 #header a {
