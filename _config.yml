@@ -12,7 +12,7 @@ title:            'Glen Harmon'
 tagline:          ''
 description:      ''
 url:              http://heyglen.github.io
-baseurl:          http://heyglen.github.io/
+baseurl:          ''
 
 author:
   name:           'Glen Harmon'

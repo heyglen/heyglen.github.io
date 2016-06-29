@@ -1,26 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
   {% include head.html %}
-
   <body>
 
-    <div>
-      <h1>
-        <a href="{{ site.baseurl }}">{{ site.title }}</a>
-      </h1>
+    <header>
+      <h1><a href="/">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
-    </div>
-
+    </header>
+    
     <div class="content container">
       {{ content }}
     </div>
+
     <br>
-    <hr>
-    <br>
-    <div><a href="https://dk.linkedin.com/in/glen-harmon-63580017">LinkedIn</a></div>
-    <br>
-    <div><a href="https://github.com/heyglen">Github</a></div>
-    <br>
+    <div class="footer">
+      <hr>
+      <div><a href="https://dk.linkedin.com/in/glen-harmon-63580017">LinkedIn</a></div>
+      <div><a href="https://github.com/heyglen">Github</a></div>
+    </div>
+
   </body>
 </html>

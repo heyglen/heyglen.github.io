@@ -1,4 +1,5 @@
 body {
+  /*font-family: Verdana,Arial,sans-serif;*/
   font-family: "Karla";
   padding: 3em 3em 3em 6em;
   font-size: 18px;
@@ -14,14 +15,8 @@ body {
 }
 
 
-#header {
-  background-color: #222;
-  color: #fff;
-  padding: 0.5em;
-  float: left;
-  margin-right: 100%;
-  font-size: 32px;
-  line-height: 1.0em;
+header > h1 {
+  font-size: 42px;
 }
 
 #header a {
@@ -29,14 +24,11 @@ body {
   text-decoration: none;
 }
 
-#header:hover {
-  background-color: #0069FF;
-}
-
 h1 {
   color: #0069FF;
   font-size: 20px;
 }
+
 
 h2 {
   font-size: 20px;
@@ -61,6 +53,7 @@ h2 {
   display: block;
   width: 60%;
   float: left;
+  color: #FFFFFF;
 }
 @media only screen
   and (max-width: 768px) {
@@ -76,11 +69,16 @@ a {
 
 a:hover {
   border-bottom: 2px #0069FF solid;
+  text-decoration: none;
 }
 
 .post-date {
   color: #aaa;
   font-weight: normal;
+}
+
+.post-link > a {
+  text-decoration: none;
 }
 
 .post-link {
@@ -99,6 +97,7 @@ a:hover {
     margin-right: 1em;
     float: left;
   }
+
   .post-link {
     display: block;
   }
