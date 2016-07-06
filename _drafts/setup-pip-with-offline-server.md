@@ -61,9 +61,10 @@ pybinary=$pyver.tgz
 py_packages_dir=/usr/local/packages/python/
 
 
-# Python 
+# Python
 mkdir -p $VIRTUAL_ENV/src
 tar zxf $py_packages_dir$pybinary -C $VIRTUAL_ENV/src
+rm $py_packages_dir$pybinary -C $VIRTUAL_ENV/src
 cd $VIRTUAL_ENV/src/$pyver
 ./configure --prefix=$VIRTUAL_ENV
 make
@@ -73,6 +74,7 @@ make install
 cd $VIRTUAL_ENV/src
 cp $py_packages_dir/setuptools*.tar.gz .
 tar zxf setuptools-*
+rm setuptools-*.gz
 cd setuptools-*
 python setup.py install
 
