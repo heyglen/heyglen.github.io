@@ -26,6 +26,7 @@ On a machine with internet, download the packages and transfer them to `offline-
 ```bash
 mkdir -p $USER/Downloads/package
 wget http://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz --directory-prefix=$USER/Downloads/package
+pip download --no-binary :all: -d $USER/Downloads/package setuptools setuptools_scm
 pip download --no-binary :all: -d $USER/Downloads/package package
 scp $USER/Downloads/package/* user@offline-server
 rm -fr $USER/Downloads/package
