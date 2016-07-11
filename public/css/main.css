@@ -1,7 +1,6 @@
 body {
-  /*font-family: Verdana,Arial,sans-serif;*/
   padding: 3em 3em 3em 6em;
-  font-family: "Karla";
+  font-family: system;
   font-size: 18px;
   line-height: 1.5em;
   width: 50%;
