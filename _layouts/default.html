@@ -15,6 +15,14 @@
     <br>
     <div class="footer">
       <hr>
+
+      {% if page.layout == "post" %}
+        <div>
+            <a href="https://github.com/heyglen/heyglen.github.io/issues/new?title=Post: {{page.title}}&body=...Innacuracy or other problem description...">:warning: Report an issue</a>
+        </div>
+        <br>
+      {% endif %}
+
       <div><a href="https://github.com/heyglen"> Github :octocat: </a></div>
       <div><a href="https://dk.linkedin.com/in/glen-harmon-63580017">LinkedIn</a></div>
     </div>
