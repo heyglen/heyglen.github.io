@@ -11,7 +11,7 @@ permalink:        pretty
 title:            'Glen Harmon'
 tagline:          ''
 description:      ''
-url:              http://heyglen.github.io
+url:              heyglen.github.io
 baseurl:          ''
 
 author:
@@ -26,3 +26,4 @@ github:
 
 gems:
   - jemoji
+  - jekyll-seo-tag
