@@ -10,7 +10,7 @@ title: Python setup with VirtualEnv on an offline server
   * Packages
 
 ```bash
-yum install -y python-pip python-ipython.noarch python-distutils-extra.noarch python-devel.x86_64 openssl-devel.x86_64 python-virtualenvwrapper.noarch git.x86_64 gnome-keyring-devel.x86_64 gnome-keyring-pam.x86_64 gnome-python2-gnomekeyring.x86_64 dbus-python sqlite-devel.x86_64 cdk.x86_64 ncurses-devel.x86_64 bzip2-devel.x86_64 readline-devel.x86_64
+yum install -y python-pip python-ipython.noarch python-distutils-extra.noarch python-devel.x86_64 openssl-devel.x86_64 python-virtualenvwrapper.noarch git.x86_64 sqlite-devel.x86_64 cdk.x86_64 ncurses-devel.x86_64 bzip2-devel.x86_64 readline-devel.x86_64
 ```
  > Assumes python packages will be stored `/usr/local/packages/python`. You can change this to whatever you have permissions to
 
@@ -24,12 +24,12 @@ yum install -y python-pip python-ipython.noarch python-distutils-extra.noarch py
 On a machine with internet, download the packages and transfer them to `offline-server`
 
 ```bash
-mkdir -p $USER/Downloads/package
-wget http://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz --directory-prefix=$USER/Downloads/package
-pip download --no-binary :all: -d $USER/Downloads/package setuptools setuptools_scm pip
-pip download --no-binary :all: -d $USER/Downloads/package package
-scp $USER/Downloads/package/* user@offline-server
-rm -fr $USER/Downloads/package
+mkdir -p $HOME/Downloads/package
+wget http://www.python.org/ftp/python/2.7.12/Python-2.7.12.tgz --directory-prefix=$HOME/Downloads/package
+pip download --no-binary :all: -d $HOME/Downloads/package setuptools setuptools_scm pip
+pip download --no-binary :all: -d $HOME/Downloads/package package
+scp $HOME/Downloads/package/* user@offline-server
+rm -fr $HOME/Downloads/package
 ```
 
 On `offline-server` setup the [pip configuration file](https://pip.pypa.io/en/stable/user_guide/#config-file) on the offline server
