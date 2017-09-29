@@ -8,9 +8,9 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            'Glen Harmon'
+title:            'Glen Harmon Technical Blog'
 tagline:          ''
-description:      ''
+description:      'Technical write-ups, tips and tricks'
 url:              heyglen.github.io
 baseurl:          ''
 
@@ -27,3 +27,12 @@ github:
 gems:
   - jemoji
   - jekyll-seo-tag
+
+plugins:
+  - jekyll-seo-tag
+
+social:
+  name: Glen Harmon
+  links:
+    - https://github.com/heyglen
+    - https://dk.linkedin.com/in/glen-harmon-63580017
