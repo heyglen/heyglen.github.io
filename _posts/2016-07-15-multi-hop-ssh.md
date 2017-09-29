@@ -18,9 +18,9 @@ Edit your OpenSSH configuration file
 
 ```conf
 host host03
-    proxycommand ssh -q -W %h:%h host02
+    proxycommand ssh -q -AW %h:%p host02
 host host04
-    proxycommand ssh -q -W %h:%h host03
+    proxycommand ssh -q -AW %h:%p host03
 ```
 
 Setup ssh keys and copy the public key to the servers for automatic login
