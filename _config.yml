@@ -8,9 +8,9 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            'Glen Harmon Technical Blog'
+title:            'Glen Harmon - Computer Stuff'
 tagline:          ''
-description:      'Technical write-ups, tips and tricks'
+description:      ''
 url:              heyglen.github.io
 baseurl:          ''
 
