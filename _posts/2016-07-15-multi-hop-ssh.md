@@ -23,10 +23,15 @@ host host04
     proxycommand ssh -q -AW %h:%p host03
 ```
 
-Setup ssh keys and copy the public key to the servers for automatic login
+Setup ssh keys
 
 ```
 [host01]# ls $HOME/.ssh/id_rsa 2> /dev/null || ssh-keygen -t rsa
+```
+
+Copy the public key to the servers for automatic login
+
+```
 [host01]# ssh-copy-id $USER@host02
 [host01]# ssh-copy-id $USER@host03
 [host01]# ssh-copy-id $USER@host04
