@@ -3,6 +3,8 @@ layout: post
 title: "Openssl pfx⟶pem"
 ---
 
+You have a certificate & key in a pfx file and need it in pem format.
+
 # Extract the Keys
 
 ```bash
