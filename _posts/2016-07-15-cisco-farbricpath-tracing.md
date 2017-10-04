@@ -3,7 +3,7 @@ layout: post
 title: Cisco FabricPath Path Tracing
 ---
 
-You need to find the egress physical interface for 3.3.3.3
+You are on n6k01 and need the egress physical interface to 3.3.3.3
 
 ![Fabric Path Logical Network Diagram](/public/img/fabric-path-logical.jpg){:class="img-responsive"}
 
