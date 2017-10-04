@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cisco FabricPath Path Tracing
+title: Cisco FabricPath Tracing
 ---
 
 You are on n6k01 and need the egress physical interface to 3.3.3.3
