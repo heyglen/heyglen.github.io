@@ -3,7 +3,7 @@ layout: post
 title: "Openssl pfx⟶pem"
 ---
 
-You have a certificate & key in a pfx file and need it in pem format.
+You have a certificate & key in a pfx file and need the host certificate and key in pem format.
 
 # Extract the Keys
 
@@ -50,7 +50,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 
 # The Public Key (Certificate)
 
-Which is the hostname on the certificate? Check the subject:
+Many certificates output? Check the subject:
 
 ```
 subject=/C=XX/ST=XXX/L=XXX/O=XXX/OU=XXXX/CN=hostname.example.com
