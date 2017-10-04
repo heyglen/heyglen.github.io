@@ -3,7 +3,7 @@ layout: post
 title: Multi Hop SSH
 ---
 
-I need to ssh through jumphosts `host02` and `host03` to get to `host04` .
+You need to ssh through jumphosts `host02` and `host03` to get to `host04` .
 
 ![SSH Multihop](/public/img/multihop-ssh/hosts.jpg){:class="img-responsive"}
 
