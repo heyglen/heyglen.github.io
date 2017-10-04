@@ -3,9 +3,9 @@ layout: post
 title: Cisco FabricPath Path Tracing
 ---
 
-![Fabric Path Logical Network Diagram](/public/img/fabric-path-logical.jpg){:class="img-responsive"}
+You need to find the egress physical interface for 3.3.3.3
 
-What is the egress physical interface for 3.3.3.3?
+![Fabric Path Logical Network Diagram](/public/img/fabric-path-logical.jpg){:class="img-responsive"}
 
 # Layer 3
 
@@ -18,7 +18,7 @@ n6k01# show ip route 3.3.3.3
     *via 3.3.3.3, Vlan123, [1/0], 1w2d, am
 ```
 
-✔ SVI Vlan123
+✓ SVI Vlan123
 
 # Layer 2
 
@@ -29,7 +29,7 @@ n6k01# show ip arp | i 3.3.3.3
 3.3.3.3  00:01:23  3333.abcd.3333  Vlan123
 ```
 
-✔ 3333.abcd.3333
+✓ 3333.abcd.3333
 
 3333.abcd.3333 egress physical interface?
 
@@ -43,7 +43,7 @@ n6k01# show mac address-table address 3333.abcd.3333 vlan 123
 
 :memo: 456 is the FabricPath switch id
 
-✔ 456.0.0
+✓ 456.0.0
 
 
 # FarbicPath: Layer 2 via a layer 3 routing protocol
@@ -57,7 +57,7 @@ n6k01# show fabricpath route switchid 456
         via Eth1/2, [115/15], 42 day/s 01:00:00, isis_fabricpath-default
 ```
 
-✔ Eth1/2
+✓ Eth1/2
 
 Neighboring switch on interface Eth1/2?
 
@@ -72,7 +72,7 @@ Mgmt address(es):
 
 ```
 
-✔ n6k02 
+✓ n6k02
 
 Connect to n6k02 on 2.2.2.2
 
