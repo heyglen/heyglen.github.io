@@ -35,8 +35,8 @@ Setup ssh keys and copy the public key to the servers for automatic login
 Test
 
 ```
-[host01]# ssh host04 hostname
-host04
+[host01]# ssh host04
+[host04]#
 ```
 
 :sunglasses:
