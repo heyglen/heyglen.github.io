@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Certificates and Openssl: Convert PFX to PEM"
+title: "openssl pfx⟶pem"
 ---
 
 # Extract the Keys
@@ -15,7 +15,7 @@ This outputs the
  * Public key
  * Signing CA public keys
 
-# Private Key 
+# Private Key
 
 The private key is a base64 encoded string between some delimiters
 
@@ -48,7 +48,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 
 # The Public Key (Certificate)
 
-Which public key matches the private key? Check the subject:
+Which is the hostname on the certificate? Check the subject:
 
 ```
 subject=/C=XX/ST=XXX/L=XXX/O=XXX/OU=XXXX/CN=hostname.example.com

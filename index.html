@@ -6,19 +6,13 @@ title: Home
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
-
-    <div class="post-link">
+      <span class="post-date">{{ post.date | date_to_string }}</span>
+      <span class="post-link">
         <a href="{{ site.baseurl }}{{ post.url | remove_first: '/'}}">
-            <div>
-            {{ post.title }}
-            </div>
+           {{ post.title }}
         </a>
-    </div>
-    <a href="{{ site.baseurl }}{{ post.url | remove_first: '/'}}">
-        <div class="post-date">{{ post.date | date_to_string }}</div>
-    </a>
-
-
+    </span>
   </div>
   {% endfor %}
-  
+</div>
+

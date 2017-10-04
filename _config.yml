@@ -8,7 +8,7 @@ kramdown:
 permalink:        pretty
 
 # Setup
-title:            'Glen Harmon - Computer Stuff'
+title:            'Technical Blog'
 tagline:          ''
 description:      ''
 url:              heyglen.github.io
@@ -28,7 +28,7 @@ gems:
   - jemoji
   - jekyll-seo-tag
 
-plugins:
+plugins_dir:
   - jekyll-seo-tag
 
 social:
