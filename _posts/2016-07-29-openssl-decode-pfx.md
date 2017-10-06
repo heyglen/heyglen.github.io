@@ -60,9 +60,9 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 -----END RSA PRIVATE KEY-----
 ```
 
-# The Public Key (Certificate)
+# The Certificate (Public Key)
 
-Many certificates output? Check the subject:
+Where many certificates output? It is the CA chain together with the certificate matching the key. Which certificate matches the key? Check the subject:
 
 ```
 subject=/C=XX/ST=XXX/L=XXX/O=XXX/OU=XXXX/CN=hostname.example.com
