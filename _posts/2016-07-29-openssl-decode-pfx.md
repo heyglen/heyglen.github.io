@@ -50,7 +50,7 @@ decrypt it with:
 openssl rsa -in encrypted_private_key.rsa
 ```
 
-your private key:
+your unencrypted private key:
 
 ```
 -----BEGIN RSA PRIVATE KEY-----
