@@ -3,7 +3,20 @@ layout: post
 title: "Openssl pfx⟶pem"
 ---
 
-You have a certificate & key in a pfx file and need the host certificate and key in pem format.
+You have a certificate & key in a pfx file and need the host certificate and key in pem base64 format.
+
+# Verify PEM Format
+
+PEM format is encoded in base64. If you open the file in a text editor, base64 looks something like this:
+
+```
+-----EXAMPLE TEXT-----
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
+...etc...
+-----EXAMPLE TEXT-----
+```
 
 # Extract the Keys
 
